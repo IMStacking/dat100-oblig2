@@ -1,14 +1,25 @@
 package no.hvl.dat100.tabeller;
-import java.util.Arrays;
 
 public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		System.out.println(Arrays.toString(tabell));
 
-	}
+    System.out.print("[");
+
+    for (int i = 0; i < tabell.length; i++) {
+        System.out.print(tabell[i]);
+
+        if (i < tabell.length - 1) {
+            System.out.print(",");
+        }
+    }
+
+    System.out.println("]");
+}
+
+	
 
 	// b)
 	public static String tilStreng(int[] tabell) {

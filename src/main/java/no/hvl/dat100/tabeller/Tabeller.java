@@ -17,12 +17,17 @@ public class Tabeller {
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
 	}
 
-	// c)
+	// c
 	public static int summer(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
-	}
+    int sum = 0;
+
+    for (int tall : tabell) {
+        sum = sum + tall;
+    }
+
+    return sum;
+}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {

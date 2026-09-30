@@ -1,12 +1,12 @@
 package no.hvl.dat100.tabeller;
+import java.util.Arrays;
 
 public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		System.out.println(Arrays.toString(tabell));
 
 	}
 

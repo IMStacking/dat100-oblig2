@@ -18,17 +18,15 @@ public class Matriser {
 
 		String tekst = "";
 
-		// i = radnummer. matrise.length er antall rader.
-		for (int i = 0; i < matrise.length; i++) {
-
-			// j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
-			for (int j = 0; j < matrise[i].length; j++) {
-				tekst = tekst + matrise[i][j] + " ";
-			}
-
-			// Linjeskift etter hver ferdig rad
-			tekst = tekst + "\n";
-		}
+            // i = radnummer. matrise.length er antall rader.
+            for (int[] matrise1 : matrise) {
+                // j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
+                for (int j = 0; j < matrise1.length; j++) {
+                    tekst = tekst + matrise1[j] + " ";
+                }
+                // Linjeskift etter hver ferdig rad
+                tekst = tekst + "\n";
+            }
 
 		return tekst;
 	}
@@ -36,9 +34,17 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-	
+		   int[][] nyMatrise = new int[matrise.length][];
+
+    for (int i = 0; i < matrise.length; i++) {
+        nyMatrise[i] = new int[matrise[i].length];
+
+        for (int j = 0; j < matrise[i].length; j++) {
+            nyMatrise[i][j] = matrise[i][j] * tall;
+        }
+    }
+
+    return nyMatrise;
 	}
 
 	// d)
@@ -67,20 +73,5 @@ public class Matriser {
     return true;
 	}
 	
-	// e)
-	public static int[][] speile(int[][] matrise) {
 
-		// TODO
-
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
-	}
-
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-	
-	}
 }

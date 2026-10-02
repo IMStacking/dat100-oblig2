@@ -22,7 +22,11 @@ public class Matriser {
             for (int[] matrise1 : matrise) {
                 // j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
                 for (int j = 0; j < matrise1.length; j++) {
-                    tekst = tekst + matrise1[j] + " ";
+                    tekst = tekst + matrise1[j];
+
+                    if (j < matrise1.length - 1) {
+                        tekst = tekst + " ";
+                    }
                 }
                 // Linjeskift etter hver ferdig rad
                 tekst = tekst + "\n";

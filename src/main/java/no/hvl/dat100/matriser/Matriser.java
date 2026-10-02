@@ -18,10 +18,10 @@ public class Matriser {
 
 		String tekst = "";
 
-		// i = radnummer. matrise.length er antall rader.
+		// i = radnummer, matrise.length er antall rader.
 		for (int i = 0; i < matrise.length; i++) {
 
-			// j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
+			// j = kolonnenummer. matrise[i].length er lengden raden.
 			for (int j = 0; j < matrise[i].length; j++) {
 				tekst = tekst + matrise[i][j] + " ";
 			}

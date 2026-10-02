@@ -33,12 +33,24 @@ public class Matriser {
 		return tekst;
 	}
 
-	// c)
-	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-	
+		// c)
+		public static int[][] skaler(int tall, int[][] matrise) {
+
+			// Opprette en matrise med like mange rader som originalt
+			int[][] resultat = new int[matrise.length][];
+
+			for (int i = 0; i < matrise.length; i++) {
+
+				// Kvar rad får lik lengde som tilsvarende rad i originalt
+				resultat[i] = new int[matrise[i].length];
+
+				for (int j = 0; j < matrise[i].length; j++) {
+					resultat[i][j] = matrise[i][j] * tall;
+				}
+			}
+
+			return resultat;
+		}
 	}
 
 	// d)

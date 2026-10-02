@@ -18,10 +18,10 @@ public class Matriser {
 
 		String tekst = "";
 
-		// i = radnummer, matrise.length er antall rader.
+		// i = radnummer. matrise.length er antall rader.
 		for (int i = 0; i < matrise.length; i++) {
 
-			// j = kolonnenummer. matrise[i].length er lengden raden.
+			// j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
 			for (int j = 0; j < matrise[i].length; j++) {
 				tekst = tekst + matrise[i][j] + " ";
 			}
@@ -79,5 +79,20 @@ public class Matriser {
     return true;
 	}
 	
+	// e)
+	public static int[][] speile(int[][] matrise) {
 
+		// TODO
+
+		throw new UnsupportedOperationException("Metoden speile ikke implementert");
+	
+	}
+
+	// f)
+	public static int[][] multipliser(int[][] a, int[][] b) {
+
+		// TODO
+		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
+	
+	}
 }

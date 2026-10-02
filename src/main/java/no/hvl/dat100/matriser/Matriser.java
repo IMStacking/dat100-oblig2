@@ -26,7 +26,7 @@ public class Matriser {
 				tekst = tekst + matrise[i][j] + " ";
 			}
 
-			// Linjeskift etter hver ferdig rad - merk at denne står i ytre løkke.
+			// Linjeskift etter hver ferdig rad
 			tekst = tekst + "\n";
 		}
 

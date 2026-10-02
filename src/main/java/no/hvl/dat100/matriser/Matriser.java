@@ -16,9 +16,21 @@ public class Matriser {
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+		String tekst = "";
+
+		// i = radnummer. matrise.length er antall rader.
+		for (int i = 0; i < matrise.length; i++) {
+
+			// j = kolonnenummer. matrise[i].length er lengden på nettopp denne raden.
+			for (int j = 0; j < matrise[i].length; j++) {
+				tekst = tekst + matrise[i][j] + " ";
+			}
+
+			// Linjeskift etter hver ferdig rad - merk at denne står i ytre løkke.
+			tekst = tekst + "\n";
+		}
+
+		return tekst;
 	}
 
 	// c)
